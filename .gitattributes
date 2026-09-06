@@ -1,0 +1,2 @@
+# Keep design docs byte-identical to the Obsidian vault originals
+*.md text eol=lf
