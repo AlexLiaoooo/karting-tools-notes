@@ -10,8 +10,11 @@
     Run it before committing whenever you have edited the notes in Obsidian.
 
 .PARAMETER Check
-    Report drift without copying anything. Exits 1 if docs/ is out of date,
-    so it can be used as a pre-commit check.
+    Report drift without copying anything.
+
+    Exit codes: 0 = up to date, 1 = stale, 2 = vault not found.
+    The pre-commit hook relies on 2 being distinct so a machine without the
+    vault is not blocked from committing.
 
 .PARAMETER VaultPath
     Override the vault folder if the vault moves.
@@ -39,7 +42,7 @@ if (-not (Test-Path -LiteralPath $VaultPath)) {
     Write-Host "Vault folder not found:" -ForegroundColor Red
     Write-Host "  $VaultPath"
     Write-Host "Pass -VaultPath '<folder>' if the vault has moved."
-    exit 1
+    exit 2
 }
 
 if (-not (Test-Path -LiteralPath $docsDir)) {

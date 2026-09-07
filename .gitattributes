@@ -1,2 +1,5 @@
 # Keep design docs byte-identical to the Obsidian vault originals
 *.md text eol=lf
+
+# Shell hooks must stay LF; CRLF breaks the #!/bin/sh interpreter line
+.githooks/** text eol=lf
