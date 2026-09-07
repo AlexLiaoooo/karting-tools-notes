@@ -76,6 +76,27 @@ so it works as a pre-commit check):
 The script only ever copies vault → repo, never the reverse, and never commits. If the
 vault moves, pass the new location with `-VaultPath '<folder>'`.
 
+Exit codes: `0` up to date, `1` stale, `2` vault not found.
+
+### Enforcing it
+
+A tracked pre-commit hook in [`.githooks/pre-commit`](.githooks/pre-commit) runs that
+check and refuses the commit while `docs/` is behind the vault, so the mirror cannot
+drift by being forgotten. Enable it once per clone:
+
+```powershell
+git config core.hooksPath .githooks
+```
+
+The hook only blocks on exit code `1`. If the check cannot run at all — no vault on this
+machine, no PowerShell, script missing — it is skipped with a warning and the commit
+proceeds, because a check that is merely unavailable should never wedge the repository.
+To bypass it deliberately:
+
+```powershell
+git commit --no-verify
+```
+
 Because the notes are mirrored verbatim, Obsidian wikilinks such as
 `[[Karting Tools - Idea Backlog]]` render as literal text on GitHub rather than as links.
 That is deliberate: it keeps the two copies identical and the sync a plain file copy.
