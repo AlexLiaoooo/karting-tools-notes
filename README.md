@@ -4,8 +4,11 @@ Design documentation and UI screenshots for **Kart Data**, a local-first, mobile
 trackside recorder for karting, and its **Track Map Notebook** feature module.
 
 > **This repository contains no application code.**
-> Kart Data lives in a separate repository and deploys from `main` to Vercel.
-> Application repository: _add link here_
+> Kart Data lives in a separate, private repository and deploys from `main` to Vercel.
+>
+> **TODO:** record the Kart Data repository URL here. It is not written down in the vault
+> or in this repo, so there is currently no pointer from the design notes to the code they
+> describe.
 
 This repo exists so the design work and reference screenshots are backed up and
 reviewable in one place, independently of the app repository and of local machines.
@@ -21,6 +24,15 @@ reviewable in one place, independently of the app repository and of local machin
 
 These are mirrored from an Obsidian vault, which remains the source of truth.
 See [Keeping the docs in sync](#keeping-the-docs-in-sync).
+
+**Why these live here and not in the application repository.** The architecture note
+describes a feature module inside Kart Data, so it could reasonably sit beside that code.
+The idea backlog could not: it spans twelve separate tool concepts, most of which are not
+Kart Data, plus adjacent non-karting tools. That is portfolio-level planning, not
+application documentation. The two notes are also a linked pair, and separating them would
+break the wikilinks in both directions. Both therefore stay here, and this repository is
+the design and planning archive for the karting tools generally rather than for Kart Data
+alone.
 
 ### Screenshots
 
