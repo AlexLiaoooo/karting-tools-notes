@@ -18,7 +18,7 @@ reviewable in one place, independently of the app repository and of local machin
 
 | File | What it covers |
 | --- | --- |
-| [Track Map Notebook - Architecture.md](docs/Track%20Map%20Notebook%20-%20Architecture.md) | The confirmed design for Track Map Notebook: product model (Track → Layout → markers → visits), data model and TypeScript types, IndexedDB store layout and migration rules, marker types, image handling, backup/restore, MVP scope and later phases. |
+| [Track Map Notebook - Architecture.md](docs/Track%20Map%20Notebook%20-%20Architecture.md) | **Historical record, superseded 2026-09-09** — see Status below. The design as confirmed on 2026-08-15 for Track Map Notebook: product model (Track → Layout → markers → visits), data model and TypeScript types, IndexedDB store layout and migration rules, marker types, image handling, backup/restore, MVP scope and later phases. |
 | [Karting Tools - Idea Backlog.md](docs/Karting%20Tools%20-%20Idea%20Backlog.md) | The other twelve karting tool ideas that were considered, with value/difficulty notes, plus ideas explicitly ruled out and a suggested build order. |
 
 These are mirrored from an Obsidian vault, which remains the source of truth.
@@ -53,18 +53,25 @@ alone.
 
 ## Status
 
-The Track Map Notebook MVP was implemented on 2026-08-15 inside the Kart Data app:
-Track and Layout management, the built-in PF International schematic with backfill for
-existing records, multi-type permanent markers, zoom/pan, separate view and edit modes,
-Event layout selection, session overlays, offline local persistence, and backup/restore
-including map images.
+The Track Map Notebook MVP shipped on 2026-08-15 and the module has been developed
+since. As of the 2026-08-31 code it has five built-in circuits (PF International,
+Whilton Mill International, Kart Silverstone Grand Prix, Buckmore Park and Clay Pigeon
+Raceway), corner numbering derived from the map geometry, a marker taxonomy of corner
+phases and pedal inputs, a full Simplified Chinese interface, zoom and pan including
+pinch, session overlays, offline persistence, and backup/restore with map images.
 
-Phase 2 (run-specific observations, next-run focus, promoting observations to permanent
-knowledge) and Phase 3 (racing lines, GPS and telemetry overlays, sharing) are not started.
+Next Run focus was dropped rather than deferred: `TrackVisit` carries no `focusMarkerIds`
+and `MarkerObservation` has neither `runId` nor `promoteToReference`. Run-specific
+observations, racing lines, GPS and telemetry overlays remain unbuilt.
 
-> The architecture note was last edited on 2026-08-15 and the application repository has
-> commits after that date, so the note may already lag the code. Where they disagree the
-> application is authoritative: update the note in the vault, then re-run the sync script.
+> **The architecture note here is a historical record, not current documentation.** It
+> describes the design as confirmed on 2026-08-15 and the implementation has since moved
+> on, most visibly in the marker types, which were replaced outright. The living design
+> document is
+> [`DESIGN.md`](https://github.com/AlexLiaoooo/karting-data-recording-website/blob/main/DESIGN.md)
+> in the application repository, which carries its own change log. Where the two disagree,
+> that document is correct. The note is kept for the reasoning behind the original
+> decisions, and its storage design is still accurate.
 
 ## Keeping the docs in sync
 

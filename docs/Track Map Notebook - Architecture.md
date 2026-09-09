@@ -1,15 +1,47 @@
 ---
 type: project-design
-status: implemented-mvp
+status: superseded
 created: 2026-08-15
+updated: 2026-09-09
+superseded-by: https://github.com/AlexLiaoooo/karting-data-recording-website/blob/main/DESIGN.md
 tags:
   - karting
   - product-idea
   - track-notes
   - web-app
+  - historical
 ---
 
 # Track Map Notebook - Architecture
+
+> [!WARNING]
+> **Historical design record. Superseded on 2026-09-09.**
+>
+> This note records the design as confirmed on 2026-08-15, at the point the MVP was built. It
+> is kept for the reasoning behind those decisions, not as a description of the app as it now
+> stands. Everything below this box should be read as "what was decided in August".
+>
+> The living design document is `DESIGN.md` in the application repository,
+> [karting-data-recording-website](https://github.com/AlexLiaoooo/karting-data-recording-website/blob/main/DESIGN.md),
+> which carries a change log and covers the whole app rather than this one module. Where the
+> two disagree, that document is correct.
+>
+> Known divergences as of the 2026-08-31 code:
+>
+> - **Marker types were replaced outright.** This note specifies Corner, Braking, Turn-in,
+>   Apex, Exit, Hazard, Overtaking and Focus. The app uses In, Mid, Out, Brake, Gas and
+>   Others: the phases of a corner plus the two pedal inputs. Hazard, Overtaking and Focus
+>   migrate to Others, keeping their original type in the marker's general note.
+> - **Five built-in circuits ship, not one.** PF International, Whilton Mill International,
+>   Kart Silverstone Grand Prix, Buckmore Park and Clay Pigeon Raceway.
+> - **Corners are numbered from the map geometry** via a `TrackCorner` type, and a marker can
+>   be identified by its corner instead of a written label. This note has no equivalent.
+> - **Next Run focus was never built.** `TrackVisit` has no `focusMarkerIds`, and
+>   `MarkerObservation` dropped both `runId` and `promoteToReference`.
+> - **The interface has a full Simplified Chinese translation**, which this note predates.
+>
+> The storage architecture below held up: the `tracks`, `trackLayouts`, `trackVisits` and
+> `mapAssets` stores, and normalised 0-1 marker coordinates, were implemented as written.
 
 ## Implementation status
 
