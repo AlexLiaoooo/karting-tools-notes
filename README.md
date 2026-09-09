@@ -4,11 +4,10 @@ Design documentation and UI screenshots for **Kart Data**, a local-first, mobile
 trackside recorder for karting, and its **Track Map Notebook** feature module.
 
 > **This repository contains no application code.**
-> Kart Data lives in a separate, private repository and deploys from `main` to Vercel.
->
-> **TODO:** record the Kart Data repository URL here. It is not written down in the vault
-> or in this repo, so there is currently no pointer from the design notes to the code they
-> describe.
+> The application is
+> [karting-data-recording-website](https://github.com/AlexLiaoooo/karting-data-recording-website),
+> which deploys from `main` to <https://karting-data-recording-website.vercel.app>.
+> The Track Map Notebook module lives there under `components/track-map/`.
 
 This repo exists so the design work and reference screenshots are backed up and
 reviewable in one place, independently of the app repository and of local machines.
@@ -63,8 +62,9 @@ including map images.
 Phase 2 (run-specific observations, next-run focus, promoting observations to permanent
 knowledge) and Phase 3 (racing lines, GPS and telemetry overlays, sharing) are not started.
 
-> The architecture note describes the design as of its last edit. If the app has moved on
-> since, treat the app repository as authoritative and update the note in the vault.
+> The architecture note was last edited on 2026-08-15 and the application repository has
+> commits after that date, so the note may already lag the code. Where they disagree the
+> application is authoritative: update the note in the vault, then re-run the sync script.
 
 ## Keeping the docs in sync
 
