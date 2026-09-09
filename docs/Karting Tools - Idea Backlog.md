@@ -2,6 +2,7 @@
 type: idea-backlog
 status: active
 created: 2026-08-15
+updated: 2026-09-09
 tags:
   - karting
   - product-ideas
@@ -11,6 +12,29 @@ tags:
 # Karting Tools - Idea Backlog
 
 The selected idea is documented in [[Track Map Notebook - Architecture]]. This note keeps the remaining ideas available for future review.
+
+## Status review, 2026-09-09
+
+Checked against the application at commit dated 2026-08-31. Track Map Notebook shipped and
+then absorbed the following month: five built-in circuits, corner numbering derived from map
+geometry and a full Chinese translation. Nothing else on this list has been started, and the
+suggested order below has not moved past item 1.
+
+Two entries are cheaper than they look, because Kart Data already records everything they
+need. Neither is a new tool; each is an analysis view over data already being collected:
+
+- **Tyre Pressure Experiment (4)** — cold and hot pressures per corner, ambient and track
+  temperature, best lap and driver feedback are all stored per Run and already comparable
+  between Runs. What is missing is the layer that finds comparable historical conditions and
+  describes the pattern.
+- **Gear Ratio Notebook (6)** — `frontSprocket` and `rearSprocket` are Setup fields, compared
+  between Runs, exported to CSV and shown on saved setup templates. What is missing is the
+  ratio arithmetic and the saved-experiment framing.
+
+One tension worth resolving deliberately: this note argues against "another large all-in-one
+racing platform", but Track Map Notebook was built inside Kart Data, and the application's own
+roadmap in its `DESIGN.md` is about deepening that single app rather than adding small
+separate tools. The suite premise below has not been followed in practice.
 
 ## Product direction
 
@@ -93,7 +117,7 @@ Reference: [LeadFoot Racing Race Day Ready Pack](https://www.lead-footracing.com
 ### 4. Tyre Pressure Experiment
 
 **Value:** High after enough personal data  
-**First-version difficulty:** Medium  
+**First-version difficulty:** Medium; lower in practice, see the 2026-09-09 status review  
 **Backend required:** No
 
 Use personal history rather than generic setup claims:
@@ -131,7 +155,7 @@ Avoid rebuilding full live timing. Alpha RaceHub and MYLAPS already cover result
 ### 6. Gear Ratio Notebook
 
 **Value:** Medium  
-**First-version difficulty:** Low  
+**First-version difficulty:** Low; the sprocket data is already recorded, see the 2026-09-09 status review  
 **Backend required:** No
 
 The differentiator should be saved experiments, not just a ratio calculation:
