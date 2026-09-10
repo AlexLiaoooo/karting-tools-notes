@@ -35,21 +35,36 @@ alone.
 
 ### Screenshots
 
-**Track Map Notebook**
+Filed by capture date rather than overwritten. An image carries no date of its own, and an
+old screenshot of a changed interface is indistinguishable from a current one.
+
+#### `screenshots/2026-09/` — current
+
+Captured 2026-09-10 from the live site at a 390x844 mobile viewport, dark theme.
 
 | File | What it shows |
 | --- | --- |
-| `pfi-default-map.png` | Reference map view. The built-in PF International schematic with sector colouring and dashed pit lane, zoom/reset controls, **Edit map**, **Replace map image**, and the OpenStreetMap ODbL attribution. |
-| `track-map-session-mobile.png` | Session track notes on mobile. Corner marker `T1` with its permanent general/dry reference shown read-only above a session-specific observation field, Better/Same/Worse result, and a session summary saved separately from the permanent notes. Predates the schematic, so the map area is still a placeholder image. |
+| [`home-dark-mobile.png`](screenshots/2026-09/home-dark-mobile.png) | Home screen, empty state, with the language toggle and the Track Library shortcut. |
+| [`create-event-modal-mobile.png`](screenshots/2026-09/create-event-modal-mobile.png) | Create event, including the saved Track Layout selector and the Open-Meteo temperature lookup. |
+| [`built-in-circuits-mobile.png`](screenshots/2026-09/built-in-circuits-mobile.png) | The built-in circuit picker: PF International, Whilton Mill, Kart Silverstone, Buckmore Park and Clay Pigeon Raceway. |
+| [`pfi-map-mobile.png`](screenshots/2026-09/pfi-map-mobile.png) | PF International reference map with T1-T15 corner labels, sector legend, start line, direction arrow and centreline length. |
+| [`map-edit-mode-mobile.png`](screenshots/2026-09/map-edit-mode-mobile.png) | Edit map mode with the marker type picker, kept separate from viewing so a marker cannot be moved by accident. |
+| [`interface-chinese-mobile.png`](screenshots/2026-09/interface-chinese-mobile.png) | The Simplified Chinese interface. Event, Session, Run and Track Library stay in English, as `DESIGN.md` requires, with Chinese prose around them. |
 
-**Kart Data core**
+#### `screenshots/2026-08/` — historical
+
+Captured 14-15 August 2026, when the MVP shipped. **These are a record, not documentation of
+the current app.** Between the two sets the app gained four more circuits, corner numbering,
+a Simplified Chinese interface and a rebuilt PF International map.
 
 | File | What it shows |
 | --- | --- |
-| `theme-dark-mobile.png` | Home screen, dark theme, empty state — "No events yet", with the local-first promise that records stay on the device and work without an account. |
+| `pfi-default-map.png` | The PF International map as first generated. It was rebuilt on 2026-08-31 after being drawn 1.65x too wide, so this shows geometry the app no longer produces. |
+| `track-map-session-mobile.png` | Session track notes, with the permanent reference shown read-only above a session observation and a Better/Same/Worse result. The marker is typed `CORNER`, a type that no longer exists. The map area is a placeholder, as this predates the schematic. |
+| `theme-dark-mobile.png` | Home screen, dark, empty state, before the language toggle and Track Library shortcut were added. |
 | `theme-dark-modal-mobile.png` | Create event modal, dark theme. |
 | `theme-light-modal-mobile.png` | Create event modal, light theme. |
-| `ambient-temperature-mobile.png` | Create event modal with ambient temperature auto-filled from device location via Open-Meteo. |
+| `ambient-temperature-mobile.png` | Create event with ambient temperature filled from device location via Open-Meteo. |
 
 ## Status
 
