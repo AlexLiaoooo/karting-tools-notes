@@ -1,4 +1,4 @@
-# karting-notes
+# karting-tools-notes
 
 Design documentation and UI screenshots for **Kart Data**, a local-first, mobile-first
 trackside recorder for karting, and its **Track Map Notebook** feature module.
