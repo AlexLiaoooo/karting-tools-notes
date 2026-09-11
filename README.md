@@ -3,6 +3,8 @@
 Design documentation and UI screenshots for **Kart Data**, a local-first, mobile-first
 trackside recorder for karting, and its **Track Map Notebook** feature module.
 
+*[中文说明](README.zh-CN.md)*
+
 > **This repository contains no application code.**
 > The application is
 > [karting-data-recording-website](https://github.com/AlexLiaoooo/karting-data-recording-website),
