@@ -1,0 +1,12 @@
+# Windows Explorer writes these into any folder it thumbnails, and screenshots/ is
+# exactly that kind of folder.
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# macOS Finder, should the repository ever be cloned there.
+.DS_Store
+
+# Obsidian workspace state, if docs/ is ever opened directly as a vault. The real vault
+# lives outside this repository and is mirrored in by scripts/sync-docs.ps1.
+.obsidian/
