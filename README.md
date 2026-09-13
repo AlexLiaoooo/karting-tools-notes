@@ -61,12 +61,12 @@ a Simplified Chinese interface and a rebuilt PF International map.
 
 | File | What it shows |
 | --- | --- |
-| `pfi-default-map.png` | The PF International map as first generated. It was rebuilt on 2026-08-31 after being drawn 1.65x too wide, so this shows geometry the app no longer produces. |
-| `track-map-session-mobile.png` | Session track notes, with the permanent reference shown read-only above a session observation and a Better/Same/Worse result. The marker is typed `CORNER`, a type that no longer exists. The map area is a placeholder, as this predates the schematic. |
-| `theme-dark-mobile.png` | Home screen, dark, empty state, before the language toggle and Track Library shortcut were added. |
-| `theme-dark-modal-mobile.png` | Create event modal, dark theme. |
-| `theme-light-modal-mobile.png` | Create event modal, light theme. |
-| `ambient-temperature-mobile.png` | Create event with ambient temperature filled from device location via Open-Meteo. |
+| [`pfi-default-map.png`](screenshots/2026-08/pfi-default-map.png) | The PF International map as first generated. It was rebuilt on 2026-08-31 after being drawn 1.65x too wide, so this shows geometry the app no longer produces. |
+| [`track-map-session-mobile.png`](screenshots/2026-08/track-map-session-mobile.png) | Session track notes, with the permanent reference shown read-only above a session observation and a Better/Same/Worse result. The marker is typed `CORNER`, a type that no longer exists. The map area is a placeholder, as this predates the schematic. |
+| [`theme-dark-mobile.png`](screenshots/2026-08/theme-dark-mobile.png) | Home screen, dark, empty state, before the language toggle and Track Library shortcut were added. |
+| [`theme-dark-modal-mobile.png`](screenshots/2026-08/theme-dark-modal-mobile.png) | Create event modal, dark theme. |
+| [`theme-light-modal-mobile.png`](screenshots/2026-08/theme-light-modal-mobile.png) | Create event modal, light theme. |
+| [`ambient-temperature-mobile.png`](screenshots/2026-08/ambient-temperature-mobile.png) | Create event with ambient temperature filled from device location via Open-Meteo. |
 
 ## Status
 

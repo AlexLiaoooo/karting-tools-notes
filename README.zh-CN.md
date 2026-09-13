@@ -53,12 +53,12 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| `pfi-default-map.png` | 最初生成的 PF International 赛道图。该图在 2026-08-31 被重建，原因是横向画宽了 1.65 倍，因此这张图上的几何形状应用已不再生成。 |
-| `track-map-session-mobile.png` | Session 赛道笔记：上方只读显示永久参考笔记，下方是该 Session 的观察记录与 Better/Same/Worse 结果。图中 marker 的类型是 `CORNER`，该类型现已不存在；赛道图区域仍是占位图，早于正式示意图。 |
-| `theme-dark-mobile.png` | 主页深色空状态，早于语言切换按钮与 Track Library 入口。 |
-| `theme-dark-modal-mobile.png` | 新建 Event 弹窗，深色主题。 |
-| `theme-light-modal-mobile.png` | 新建 Event 弹窗，浅色主题。 |
-| `ambient-temperature-mobile.png` | 新建 Event 时，通过设备定位与 Open-Meteo 自动填入环境温度。 |
+| [`pfi-default-map.png`](screenshots/2026-08/pfi-default-map.png) | 最初生成的 PF International 赛道图。该图在 2026-08-31 被重建，原因是横向画宽了 1.65 倍，因此这张图上的几何形状应用已不再生成。 |
+| [`track-map-session-mobile.png`](screenshots/2026-08/track-map-session-mobile.png) | Session 赛道笔记：上方只读显示永久参考笔记，下方是该 Session 的观察记录与 Better/Same/Worse 结果。图中 marker 的类型是 `CORNER`，该类型现已不存在；赛道图区域仍是占位图，早于正式示意图。 |
+| [`theme-dark-mobile.png`](screenshots/2026-08/theme-dark-mobile.png) | 主页深色空状态，早于语言切换按钮与 Track Library 入口。 |
+| [`theme-dark-modal-mobile.png`](screenshots/2026-08/theme-dark-modal-mobile.png) | 新建 Event 弹窗，深色主题。 |
+| [`theme-light-modal-mobile.png`](screenshots/2026-08/theme-light-modal-mobile.png) | 新建 Event 弹窗，浅色主题。 |
+| [`ambient-temperature-mobile.png`](screenshots/2026-08/ambient-temperature-mobile.png) | 新建 Event 时，通过设备定位与 Open-Meteo 自动填入环境温度。 |
 
 ## 当前状态
 
