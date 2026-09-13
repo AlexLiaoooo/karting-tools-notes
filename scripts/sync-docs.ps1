@@ -30,7 +30,7 @@
 [CmdletBinding()]
 param(
     [switch]$Check,
-    [string]$VaultPath = 'C:\MY_FILES\Obsidian\Personal_Vault\Personal Projects\Karting tools'
+    [string]$VaultPath = 'C:\MY FILES\Obsidian\Personal_Vault\Personal_Vault\Personal Projects\Karting tools'
 )
 
 $ErrorActionPreference = 'Stop'
