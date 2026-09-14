@@ -14,6 +14,13 @@ trackside recorder for karting, and its **Track Map Notebook** feature module.
 This repo exists so the design work and reference screenshots are backed up and
 reviewable in one place, independently of the app repository and of local machines.
 
+<p align="center">
+  <img src="screenshots/2026-09/pfi-map-mobile.png" width="270" alt="PF International reference map with corner labels T1 to T15, a sector legend, the start line and the direction arrow">
+  &nbsp;&nbsp;
+  <img src="screenshots/2026-09/built-in-circuits-mobile.png" width="270" alt="The built-in circuit picker, listing PF International, Whilton Mill, Kart Silverstone, Buckmore Park and Clay Pigeon Raceway">
+</p>
+<p align="center"><em>The PF International reference map, and the built-in circuit picker. Captured 2026-09-10; the full set is listed below.</em></p>
+
 ## Contents
 
 ### `docs/` — design notes

@@ -13,6 +13,13 @@
 
 本仓库的作用，是把设计工作与参考截图备份在一处并便于回看，既不依赖应用仓库，也不依赖某一台本地电脑。
 
+<p align="center">
+  <img src="screenshots/2026-09/pfi-map-mobile.png" width="270" alt="PF International 参考赛道图：T1 至 T15 弯角标签、分段图例、起点线与行驶方向箭头">
+  &nbsp;&nbsp;
+  <img src="screenshots/2026-09/built-in-circuits-mobile.png" width="270" alt="内置赛道选择器，列出 PF International、Whilton Mill、Kart Silverstone、Buckmore Park 与 Clay Pigeon Raceway">
+</p>
+<p align="center"><em>PF International 参考赛道图，以及内置赛道选择器。截取于 2026-09-10；完整截图清单见下文。</em></p>
+
 ## 内容
 
 ### `docs/` — 设计笔记
