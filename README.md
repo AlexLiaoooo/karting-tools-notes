@@ -143,3 +143,15 @@ git commit --no-verify
 Because the notes are mirrored verbatim, Obsidian wikilinks such as
 `[[Karting Tools - Idea Backlog]]` render as literal text on GitHub rather than as links.
 That is deliberate: it keeps the two copies identical and the sync a plain file copy.
+
+## Licence
+
+© 2026 Alex Liao. Everything in this repository — the design notes, the screenshots and the two
+helper scripts — is released under
+[Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). Reuse it however you
+like, with credit.
+
+The PF International screenshots show a map whose geometry is derived from OpenStreetMap,
+which is © OpenStreetMap contributors under the
+[Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/). That attribution
+is carried in the images themselves.

@@ -126,3 +126,12 @@ git commit --no-verify
 
 由于笔记是逐字节镜像的，`[[Karting Tools - Idea Backlog]]` 这类 Obsidian wikilink 在 GitHub 上
 会显示为纯文本而不是链接。这是刻意的取舍：它让两份副本保持完全一致，同步也就只是一次普通的文件复制。
+
+## 许可
+
+© 2026 Alex Liao。本仓库的全部内容 — 设计笔记、截图以及两个辅助脚本 — 均以
+[知识共享 署名 4.0 国际](LICENSE)（CC BY 4.0）许可发布。可自由使用，但须署名。
+
+PF International 的截图中包含由 OpenStreetMap 数据派生的赛道几何，其数据版权归
+© OpenStreetMap 贡献者所有，采用 [Open Database License 1.0](https://opendatacommons.org/licenses/odbl/1-0/)。
+署名信息已包含在图片本身之中。
